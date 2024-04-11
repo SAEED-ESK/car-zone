@@ -1,0 +1,32 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block branding %}
+
+<h1 id="head">
+    <a href="/admin"><img src="{% static 'img/logos/black-logo.png' %}" alt="" class="brand_img"></a>
+</h1>
+
+{% endblock %}
+
+{% block extrastyle %}
+
+<!-- <link rel="stylesheet" href="{% static 'css/admin.css' %}"> -->
+<style>
+    #header {
+    background-color: #fff !important;
+    color: #ff0000 !important;
+    }
+
+    #header a:link, #header a:visited{
+        color: #000 !important;
+    }
+    .module h2, .module caption, .inline-group h2{
+        background-color: #000 !important;
+    }
+    #content-related .module h2{
+        color: #fff !important;
+    }
+</style>
+
+{% endblock %}
